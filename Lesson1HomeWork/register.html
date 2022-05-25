@@ -6,41 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mehmet Ardıç">
     <meta name="description" content="Sign Up page template">
+    <link rel="stylesheet" href="./Css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Sign Up</title>
 </head>
 <body>
-    <h3>Create your Accont</h3>
-    <form action="#" method="post">
-        
-        <label for="fullName">Full Name : </label>
-        <input type="text" id="fullName" name="fullName" placeholder="Please enter your name" required><br><br>
-        
-        <label for="email">Email : </label>
-        <input type="email" id="email" name="email" placeholder="Please enter email address" required><br><br>
-        
-        <label for="email">Tel : </label>
-        <input type="tel" id="tel" name="tel" placeholder="Please enter phone number" required><br><br>
+    <div class="container">
+        <h2>Create your Accont</h2>
+        <form action="#" method="post">
+            <div class="input">
+                <label for="fullName"><i class="fa-solid fa-user"></i></label>
+                <input type="text" id="fullName" name="fullName" placeholder="Please enter Full name" required><br><br>
+            </div>
+            <div class="input">
+                <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                <input type="email" id="email" name="email" placeholder="Please enter email address" required><br><br>
+            </div>
+            <div class="input">
+                <label for="email"><i class="fa-solid fa-mobile-screen"></i></label>
+                <input type="tel" id="tel" name="tel" placeholder="Please enter phone number" required><br><br>
+            </div>
+            <div class="input">
+                <label for="job"><i class="fa-solid fa-user-doctor"></i></label>
+                <select name="job" id="job">
+                    <option value="Doctor">Doctor</option>
+                    <option value="Engineer">Engineer</option>
+                    <option value="Soldier">Soldier</option>
+                </select><br><br>
+            </div>
+            <div class="input">
+                <label for="password"><i class="fa-solid fa-key"></i></label>
+                <input type="password" name="password" id="password" placeholder="Enter the password" required><br><br>
+            </div>
+            <div class="input">
+                <label for="retryPassword"><i class="fa-solid fa-key"></i></label>
+                <input type="password" name="retryPassword" id="retryPassword" placeholder="Enter the retry password" required><br><br>
+            </div>
+            
+            <div class="radio">
+                    <i class="fa-solid fa-mars-and-venus"></i>
+                    <input type="radio" name="gender" id="man" value="man">
+                    <label for="man">Man</label>
+                    <input type="radio" name="gender" id="woman" value="woman">
+                    <label for="woman">Woman</label><br><br>
+            </div>
 
-        <label for="job">Job : </label>
-        <select name="job" id="job">
-            <option value="Engineer">Engineer</option>
-            <option value="Doctor">Doctor</option>
-            <option value="Soldier">Soldier</option>
-        </select><br><br>
-
-        <label for="password">Password : </label>
-        <input type="password" name="password" id="password" placeholder="Enter the password" required><br><br>
-
-        <label for="retryPassword">Retry Password : </label>
-        <input type="password" name="retryPassword" id="retryPassword" placeholder="Enter the password" required><br><br>
-        <div>Gender : 
-            <input type="radio" name="gender" id="man" value="man">
-            <label for="man">Man</label>
-            <input type="radio" name="gender" id="woman" value="woman">
-            <label for="woman">Woman</label><br><br>
-        </div>
-        <input type="submit" value="Create">
-        <input type="reset" value="Reset">
-    </form>
+            <input type="submit" value="Create">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    
 </body>
 </html>
