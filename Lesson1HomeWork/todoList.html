@@ -7,24 +7,42 @@
     <meta name="author" content="Mehmet Ardıç">
     <meta name="description" content="to do list">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./Css/todoList.css">
     <title>To Do List</title>
 </head>
 <body>
-    <form action="#" method="post">
-        <label for="toDo">New Todo : </label><br><br>
-        <input type="text" name="toDo" id="toDo" required>
-        <input type="submit" value="Add">
-    </form><br><br><br>
-    <form action="#" method="post">
-        <label for="edit">Edit: </label>
-        <input type="text" name="edit" id="edit">
-        <input type="submit" value="Add" id="Add">
-    </form><br><br>
-
-    <input type="checkbox" name="todoItem1" id="todoItem1" value="Item1">
-    <label for="todoItem1">Item1</label><br><br>
-    <input type="checkbox" name="todoItem2" id="todoItem2" value="Item2">
-    <label for="todoItem2">Item2</label><br><br>
-    
+    <div class="pink"></div>
+    <div class="container">
+        <div class="addTodoItem">
+            <form action="#" method="post">
+                <label for="toDo" style="font-weight:bold;">New Todo : </label>
+                <input type="text" name="toDo" id="toDo" required>
+                <input type="submit" value="Add">
+            </form>
+        </div>
+        <div class="editTodoItem">
+            <form action="#" method="post">
+                <label for="edit">Edit: </label>
+                <input type="text" name="edit" id="edit">
+                <input type="submit" value="Save" id="edit">
+            </form>
+        </div>
+        
+        <div class="todoItemList">
+            <div class="item">
+                <input type="checkbox" name="todoItem1" id="todoItem1" value="Item1">
+                <label for="todoItem1">Item1</label>
+                <button id="delete"><i class="fa-solid fa-trash"></i></button>
+                <button id="edit"><i class="fa-solid fa-pencil"></i></button>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="todoItem2" id="todoItem2" value="Item2">
+                <label for="todoItem2">Item2</label>
+                <button id="delete"><i class="fa-solid fa-trash"></i></i></button>
+                <button id="edit"><i class="fa-solid fa-pencil"></i></button> 
+            </div>
+            
+        </div>
+    </div>
 </body>
 </html>

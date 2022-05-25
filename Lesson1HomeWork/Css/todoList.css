@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 20px;
+    background-color: white;
+}
+.addTodoItem{
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    box-shadow: 1px 2px 5px 0.5px rgba(0, 0, 0, .25);
+}
+.addTodoItem input:not([type="submit"]){
+    line-height: 25px;
+    width: 80%;
+    padding-left: 10px;
+    margin-top: 4px;
+}
+.addTodoItem [type="submit"]{
+    background-color: rgb(232, 72, 197);
+    display: inline-block;
+    color: white;
+    width: 18%;
+    line-height: 25px;
+    border: 1px solid rgb(232, 72, 197);
+    border-radius: 2px;
+}
+.addTodoItem [type="submit"]:hover{
+    cursor: pointer;
+    opacity: .75;
+    transition: 1s all;
+}
+.editTodoItem{
+    padding: 15px 15px;
+    border: 1px solid rgba(174, 174, 174,.5);
+}
+.editTodoItem input:not([type="submit"]){
+    line-height: 25px;
+    width: 70%;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.editTodoItem [type="submit"]{
+    font-weight: bold;
+    color: rgb(232, 72, 197);
+    display: inline-block;
+    background-color: white;
+    width: 15%;
+    line-height: 25px;
+    border: 1px solid rgb(232, 72, 197);
+    border-radius: 2px;
+    margin-left: 2px;
+}
+.editTodoItem [type="submit"]:hover{
+    cursor: pointer;
+    opacity: .75;
+    transition: 1s all;
+}
+.todoItemList .item{
+    padding: 15px 15px;
+    border: 1px solid rgba(174, 174, 174,.5);
+    border-top: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.todoItemList button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    float: right;
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    margin-left: 5px;
+    color :rgb(232, 72, 197)   
+}
+.pink{
+    height: 16vh;
+    background-color: rgb(232, 72, 197);
+}
